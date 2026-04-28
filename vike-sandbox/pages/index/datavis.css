@@ -7,7 +7,6 @@ body {
 
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .donut {
@@ -24,9 +23,9 @@ body {
 .donut-text {
   background: radial-gradient(
     circle at 38% 36%,
-    #5a8fff 0%,
-    #1e48b8 45%,
-    #0c1f58 100%
+    rgb(126, 90, 255) 0%,
+    rgb(86, 30, 184) 45%,
+    rgba(12, 31, 88, 0.15) 100%
   );
   top: 25px;
   left: 25px;
@@ -52,10 +51,10 @@ body {
   height: 200px;
   border-radius: 50%;
   background: radial-gradient(
-    circle at 65% 28%,
-    #4a80ff 0%,
+    circle at 55% 28%,
     #1848d8 42%,
-    #091848 100%
+    #091848 100%,
+    #4a80ff 0%
   );
   position: absolute;
   top: 0;
@@ -71,9 +70,9 @@ body {
   height: 240px;
   border-radius: 50%;
   background: radial-gradient(
-    circle at 30% 68%,
+    circle at 75% 32%,
     #2565f5 0%,
-    #0e35b0 48%,
+    #0e35b0 18%,
     rgba(5, 12, 42, 0.96) 100%
   );
   position: absolute;
@@ -90,9 +89,9 @@ body {
   height: 280px;
   border-radius: 50%;
   background: radial-gradient(
-    circle at 68% 22%,
-    #1552e0 0%,
-    #0a2878 50%,
+    circle at 28% 22%,
+    #1552e0 10%,
+    #0a2878 40%,
     #030c28 100%
   );
   position: absolute;
@@ -131,7 +130,12 @@ body {
 }
 
 .line-with-text-0::before {
-  background: linear-gradient(90deg, #091848 0%, #1848d8 50%, #4a80ff 100%);
+  background: linear-gradient(
+          184deg,
+          rgba(5, 12, 42, 0.7) 30%,
+          #1848d8 76%,
+          rgba(74, 128, 255, 0.7) 100%
+  );
   width: 207px;
   height: 6px;
   top: -8px;
@@ -143,10 +147,10 @@ body {
 
 .line-with-text-1::before {
   background: linear-gradient(
-    90deg,
-    rgba(5, 12, 42, 0.96) 0%,
-    #0e35b0 50%,
-    #2565f5 100%
+          4deg,
+          rgba(37, 101, 245, 0.7) 0%,
+          #0e35b0 28%,
+          rgba(5, 12, 42, 0.7) 100%
   );
   width: 226px;
   height: 6px;
@@ -158,7 +162,12 @@ body {
 }
 
 .line-with-text-2::before {
-  background: linear-gradient(90deg, #030c28 0%, #0a2878 50%, #1552e0 100%);
+  background: linear-gradient(
+          299deg,
+          rgba(21, 82, 224, 0.7) 30%,
+          #0a2878 70%,
+          rgba(5, 12, 42, 0.7) 100%
+  );
   width: 233px;
   height: 6px;
   top: -96px;
@@ -169,7 +178,12 @@ body {
 }
 
 .line-with-text-3::before {
-  background: linear-gradient(90deg, #42050f 0%, #b01030 50%, #f03050 100%);
+  background: linear-gradient(
+          184deg,
+          rgba(66, 5, 15, 0.7) 0%,
+          #b01030 50%,
+          rgba(240, 48, 80, 0.7) 100%
+  );
   width: 233px;
   height: 6px;
   top: -108px;

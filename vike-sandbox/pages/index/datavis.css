@@ -1,18 +1,18 @@
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 .container {
-    height: 44rem;
+  height: 44rem;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .donut {
-    position: absolute;
-    border-radius: 50%;
+  position: absolute;
+  border-radius: 50%;
 }
 
 /*.donut-default {*/
@@ -22,131 +22,159 @@ body {
 /*}*/
 
 .donut-text {
-    background: linear-gradient(215deg, #090040 0%, #471396 27%, #B13BFF 65%, rgba(47, 47, 228, 0.3) 100%);
-    top: 25px;
-    left: 25px;
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2000;
+  background: radial-gradient(
+    circle at 38% 36%,
+    #5a8fff 0%,
+    #1e48b8 45%,
+    #0c1f58 100%
+  );
+  top: 25px;
+  left: 25px;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
 }
 
 .donut-text span {
-    color: #02dac1;
-    font-weight: bolder;
+  color: #bfdbfe;
+  font-weight: bolder;
 }
 
 /* ============ layer 0 ==========*/
 
 .layer0 .donut-case {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: linear-gradient(215deg, rgba(6, 22, 21, 1) 0%, rgba(25, 81, 83, 1) 27%, rgba(22, 132, 147, 1) 65%, rgba(47, 180, 228, 1) 100%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-clip: border-box;
-    overflow: hidden;
-    z-index: 1999;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 65% 28%,
+    #4a80ff 0%,
+    #1848d8 42%,
+    #091848 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-clip: border-box;
+  overflow: hidden;
+  z-index: 1999;
 }
-
-
 
 /* ============ layer 1 ==========*/
 .layer1 .donut-case {
-    width: 240px;
-    height: 240px;
-    border-radius: 50%;
-    background: linear-gradient(215deg, rgba(82, 70, 151, 0.9) 0%, rgba(42, 42, 87, 0.9) 27%, rgba(52, 70, 145, 0.9) 65%, rgba(80, 80, 227, 0.9) 100%);
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    background-clip: border-box;
-    overflow: hidden;
-    z-index: 1998;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 68%,
+    #2565f5 0%,
+    #0e35b0 48%,
+    rgba(5, 12, 42, 0.96) 100%
+  );
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  background-clip: border-box;
+  overflow: hidden;
+  z-index: 1998;
 }
 
 /* ============ layer 2 ==========*/
 .layer2 .donut-case {
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    background: linear-gradient(215deg, rgba(8, 6, 22, 1) 0%, rgba(26, 25, 83, 1) 27%, rgba(22, 46, 147, 1) 65%, rgba(47, 47, 228, 1) 100%);
-    position: absolute;
-    top: -40px;
-    left: -40px;
-    background-clip: border-box;
-    overflow: hidden;
-    z-index: 1997;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 68% 22%,
+    #1552e0 0%,
+    #0a2878 50%,
+    #030c28 100%
+  );
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  background-clip: border-box;
+  overflow: hidden;
+  z-index: 1997;
 }
 
 /* ============ layer 3 ==========*/
 .layer3 .donut-case {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: linear-gradient(215deg, rgb(22, 6, 14) 0%, rgb(83, 25, 51) 27%, rgb(147, 22, 55) 65%, rgb(228, 47, 74) 100%);
-    position: absolute;
-    top: -50px;
-    left: -50px;
-    background-clip: border-box;
-    overflow: hidden;
-    z-index: 1996;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 34% 32%,
+    #f03050 0%,
+    #b01030 48%,
+    #42050f 100%
+  );
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  background-clip: border-box;
+  overflow: hidden;
+  z-index: 1996;
 }
 
 /* ============ line with text ==========*/
 .line-with-text::before {
-    content: attr(data-content);
-    transform: rotate(324deg);
-    position: absolute;
-    font-weight: bolder;
+  content: attr(data-content);
+  transform: rotate(324deg);
+  position: absolute;
+  font-weight: bolder;
 }
 
 .line-with-text-0::before {
-    background: linear-gradient(215deg, rgba(6, 22, 21, 1) 0%, rgba(25, 81, 83, 1) 27%, rgba(22, 132, 147, 1) 65%, rgba(47, 180, 228, 1) 100%);
-    width: 207px;
-    height: 6px;
-    top: -8px;
-    left: 125px;
-    padding-left: 157px;
-    padding-top: 2px;
-    z-index: 1999;
+  background: linear-gradient(90deg, #091848 0%, #1848d8 50%, #4a80ff 100%);
+  width: 207px;
+  height: 6px;
+  top: -8px;
+  left: 125px;
+  padding-left: 157px;
+  padding-top: 2px;
+  z-index: 1999;
 }
 
 .line-with-text-1::before {
-    background: linear-gradient(215deg, rgba(82, 70, 151, 0.9) 0%, rgba(42, 42, 87, 0.9) 27%, rgba(52, 70, 145, 0.9) 65%, rgba(80, 80, 227, 0.9) 100%);
-    width: 226px;
-    height: 6px;
-    top: -64px;
-    left: 146px;
-    padding-left: 125px;
-    padding-top: 2px;
-    z-index: 1998;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 12, 42, 0.96) 0%,
+    #0e35b0 50%,
+    #2565f5 100%
+  );
+  width: 226px;
+  height: 6px;
+  top: -64px;
+  left: 146px;
+  padding-left: 125px;
+  padding-top: 2px;
+  z-index: 1998;
 }
 
 .line-with-text-2::before {
-    background: linear-gradient(215deg, rgba(8, 6, 22, 1) 0%, rgba(26, 25, 83, 1) 27%, rgba(22, 46, 147, 1) 65%, rgba(47, 47, 228, 1) 100%);
-    width: 233px;
-    height: 6px;
-    top: -96px;
-    left: 136px;
-    padding-left: 106px;
-    padding-top: 2px;
-    z-index: 1997;
+  background: linear-gradient(90deg, #030c28 0%, #0a2878 50%, #1552e0 100%);
+  width: 233px;
+  height: 6px;
+  top: -96px;
+  left: 136px;
+  padding-left: 106px;
+  padding-top: 2px;
+  z-index: 1997;
 }
 
 .line-with-text-3::before {
-    background: linear-gradient(215deg, rgb(22, 6, 14) 0%, rgb(83, 25, 51) 27%, rgb(147, 22, 55) 65%, rgb(228, 47, 74) 100%);
-    width: 233px;
-    height: 6px;
-    top: -108px;
-    left: 61px;
-    padding-left: 191px;
-    padding-top: 2px;
-    z-index: 1996;
+  background: linear-gradient(90deg, #42050f 0%, #b01030 50%, #f03050 100%);
+  width: 233px;
+  height: 6px;
+  top: -108px;
+  left: 61px;
+  padding-left: 191px;
+  padding-top: 2px;
+  z-index: 1996;
 }
